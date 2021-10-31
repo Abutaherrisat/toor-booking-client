@@ -6,7 +6,6 @@ import './AddService.css'
 const AddService = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
-         console.log(data);
          axios.post('https://grim-phantom-33520.herokuapp.com/addservice',data)
          .then(res =>{
              if(res.data.insertedId){

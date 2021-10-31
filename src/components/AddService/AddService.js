@@ -7,7 +7,7 @@ const AddService = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
          console.log(data);
-         axios.post('http://localhost:5000/addservice',data)
+         axios.post('https://grim-phantom-33520.herokuapp.com/addservice',data)
          .then(res =>{
              if(res.data.insertedId){
                  alert('Service has been added successfully')

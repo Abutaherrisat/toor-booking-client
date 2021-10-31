@@ -5,7 +5,7 @@ const OrderServices = (props) => {
   const { firstName, description, img, price, _id } = props.service;
   const [text, setText] = useState("");
   const handleDelete = (e, id) => {
-    const url = `http://localhost:5000/services/${id}`;
+    const url = `https://grim-phantom-33520.herokuapp.com/services/${id}`;
 
     if (window.confirm("Are you sure! Do you want to delete this service?")) {
       fetch(url, {

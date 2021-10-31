@@ -10,7 +10,7 @@ const Booking = () => {
     const [service, setService] = useState({});
     const { user } = useAuth();
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://grim-phantom-33520.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [serviceId])
@@ -20,7 +20,7 @@ const Booking = () => {
     //         email: email,
     //         order: service
     //     }
-    //     fetch(`http://localhost:5000/addOrder`, {
+    //     fetch(`https://grim-phantom-33520.herokuapp.com/addOrder`, {
     //         method: 'post',
     //         headers: {
     //             'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ const Booking = () => {
         }
         console.log(newOrder);
 
-        fetch(`http://localhost:5000/addOrder`, {
+        fetch(`https://grim-phantom-33520.herokuapp.com/addOrder`, {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'

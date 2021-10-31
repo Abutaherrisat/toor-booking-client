@@ -31,7 +31,6 @@ const useFirebase = () => {
   }
   const handleRegistration = e => {
     e.preventDefault();
-    console.log(email + " " + password);
     if (password.length < 6) {
       setError('password must be at least 6 character')
       return
@@ -80,7 +79,6 @@ const useFirebase = () => {
     onAuthStateChanged(auth, user => {
       if (user) {
         setUser(user);
-        console.log(user);
         sessionStorage.setItem('user', JSON.stringify(user.displayName));
       }
     })

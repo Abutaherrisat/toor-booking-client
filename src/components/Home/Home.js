@@ -24,12 +24,6 @@ const Home = () => {
                         service={service}
                     > </Service>)
                 }
-                {/* <div>
-                <h1 className="text-center">gallery</h1>
-                
-            </div> */}
-
-
             </div>
             <Gallery></Gallery>
             <Guide></Guide>

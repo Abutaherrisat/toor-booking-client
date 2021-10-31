@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import './Booking.css'
@@ -14,26 +13,7 @@ const Booking = () => {
             .then(res => res.json())
             .then(data => setService(data))
     }, [serviceId])
-    // const handleClick = () => {
-    //     const email = user.email;
-    //     const newOrder = {
-    //         email: email,
-    //         order: service
-    //     }
-    //     fetch(`https://grim-phantom-33520.herokuapp.com/addOrder`, {
-    //         method: 'post',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify(newOrder)
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
 
-    //         })
-    //     console.log(email);
-    // }
     const { register, handleSubmit, reset } = useForm();
     const history = useHistory();
     const onSubmit = (data) => {
@@ -42,8 +22,6 @@ const Booking = () => {
             order: service,
             billingInfo: data
         }
-        console.log(newOrder);
-
         fetch(`https://grim-phantom-33520.herokuapp.com/addOrder`, {
             method: 'post',
             headers: {
@@ -53,7 +31,6 @@ const Booking = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 history.push('/myorder')
             })
     };

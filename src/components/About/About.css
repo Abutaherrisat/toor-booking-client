@@ -1,0 +1,9 @@
+.guide-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.text-color {
+    color:black
+}

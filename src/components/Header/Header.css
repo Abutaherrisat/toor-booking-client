@@ -1,0 +1,26 @@
+.items {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white!important;
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.items:hover {
+  background-color: lightgreen;
+  
+}
+
+.header-container {
+  /* background-color: rgb(137, 144, 112); */
+  background-color: teal;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: white!important;
+}

@@ -1,0 +1,22 @@
+.service-style{
+    /* width: 365px;
+    margin-top: 40px;
+     */
+     /* background-color:wheat; */
+    /* color: whitesmoke; */
+    margin: 20px;
+    border-radius: 10px;
+    width: 321px;
+    padding-top: 3px;
+    box-shadow: 10px 10px 20px
+};
+.img-style{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 200px;
+    height: 200px;
+}
+.location{
+    color: darkgoldenrod;
+}

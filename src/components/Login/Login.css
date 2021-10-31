@@ -1,0 +1,16 @@
+.login-container {
+    padding: 20px;
+}
+.google-signin{
+    text-align: center;
+}
+form  {
+    border: 1px solid grey;
+    background-color:rgb(166, 246, 166);
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+.login-pic{
+    width: 80%;
+}
